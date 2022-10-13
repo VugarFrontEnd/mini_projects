@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Interactive Quiz</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Interactive Quize</h1>
+      </div>
+      <div class="result display-none">
+        <p>Your result is <span>0</span>%</p>
+      </div>
+      <form class="questionary-form">
+        <!-- Questions start here -->
+        <div class="question">
+          <p>
+            1. If I have five apples and I gift one of them to my sister, how
+            many more apples I will have?
+          </p>
+          <div class="answer">
+            <input type="radio" name="q1" id="q1-A" value="A" checked />
+            <label for="q1-A">I will have four apples</label>
+          </div>
+          <div class="answer">
+            <input type="radio" name="q1" id="q1-B" value="B" />
+            <label for="q1-B">I will have no apple at all</label>
+          </div>
+        </div>
+        <div class="question">
+          <p>2. Who is Pres. Aliyev's best friend?</p>
+          <div class="answer">
+            <input type="radio" name="q2" id="q2-A" value="A" checked />
+            <label for="q2-A">It's Vendor Karuzo</label>
+          </div>
+          <div class="answer">
+            <input type="radio" name="q2" id="q2-B" value="B" />
+            <label for="q2-B">He doesn't have any friend</label>
+          </div>
+        </div>
+        <div class="question">
+          <p>3. How would you show your gratitude to anyone you don't like?</p>
+          <div class="answer">
+            <input type="radio" name="q3" id="q3-A" value="A" checked />
+            <label for="q3-A">I wouldn't bother to</label>
+          </div>
+          <div class="answer">
+            <input type="radio" name="q3" id="q3-B" value="B" />
+            <label for="q3-B">I would do it honestly</label>
+          </div>
+        </div>
+        <div class="question">
+          <p>
+            4. If Putin uses a nuclear bomb against Ukraine, how do you think
+            the West will react?
+          </p>
+          <div class="answer">
+            <input type="radio" name="q4" id="q4-A" value="A" checked />
+            <label for="q4-A">Military response</label>
+          </div>
+          <div class="answer">
+            <input type="radio" name="q4" id="q4-B" value="B" />
+            <label for="q4-B">They will do nothing</label>
+          </div>
+        </div>
+        <div class="question">
+          <p>5. Who is US's current president?</p>
+          <div class="answer">
+            <input type="radio" name="q5" id="q5-A" value="A" checked />
+            <label for="q5-A">Donald Trump</label>
+          </div>
+          <div class="answer">
+            <input type="radio" name="q5" id="q5-B" value="B" />
+            <label for="q5-B">Joseph Biden</label>
+          </div>
+        </div>
+        <!-- Questions end here -->
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

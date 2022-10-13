@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(97, 154, 154);
+}
+.container {
+  background-color: rgb(6, 35, 85);
+  min-height: 100vh;
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto 20px;
+  border-radius: 20px;
+  padding: 20px;
+  color: #fff;
+  box-shadow: 0px 0px 20px 1px rgb(185, 185, 185);
+}
+.header h1 {
+  text-align: center;
+  font-size: 4rem;
+  padding: 10px 0;
+}
+.result {
+  text-align: center;
+  font-size: 2rem;
+}
+.result span {
+  font-size: 4rem;
+}
+/* Will be used in JS */
+.display-none {
+  display: none;
+}
+.questionary-form {
+  padding: 10px;
+  font-size: 1.3rem;
+  accent-color: rgb(204, 62, 166);
+}
+.questionary-form .question {
+  padding: 20px 0;
+}
+.questionary-form .question p {
+  font-style: italic;
+  padding-bottom: 12px;
+}
+input[type="submit"] {
+  background: rgb(255, 0, 0);
+  color: #fff;
+  padding: 8px 20px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+  margin: 40px auto 0;
+  transition: all 0.3s linear;
+}
+input[type="submit"]:hover {
+  background: rgb(221, 57, 57);
+}
