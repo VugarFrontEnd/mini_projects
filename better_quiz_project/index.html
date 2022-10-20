@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./app.js" defer></script>
+    <title>Interactive Quiz</title>
+  </head>
+  <body>
+    <div class="quiz">
+      <div class="quiz-header">
+        <h1>Interactive Quiz</h1>
+        <p>
+          <span>Your score is <span class="score">0</span>%</span>
+        </p>
+      </div>
+      <form class="form-questions">
+        <div class="question-wrapper">
+          <p>
+            <span>1.</span> What was the first feature-length animated movie
+            ever released? (Hint: It was a Disney Movie)
+          </p>
+          <div class="answer1">
+            <input type="radio" name="q1" id="q1-a1" value="A" checked />
+            <label for="q1-a1">Snow White and the Seven Dwarfs</label>
+          </div>
+          <div class="answer2">
+            <input type="radio" name="q1" id="q1-a2" value="B" />
+            <label for="q1-a2">World War Z</label>
+          </div>
+        </div>
+        <div class="question-wrapper">
+          <p>
+            <span>2.</span> Which country is also known as the Switzerland of
+            Central Asia?
+          </p>
+          <div class="answer1">
+            <input type="radio" name="q2" id="q2-a1" value="A" checked />
+            <label for="q1">Kyrgzystan</label>
+          </div>
+          <div class="answer2">
+            <input type="radio" name="q2" id="q2-a2" value="B" />
+            <label for="q2-a2">Kazakstan</label>
+          </div>
+        </div>
+        <div class="question-wrapper">
+          <p>
+            <span>3.</span> Which was the Nazi Germany's largest concentration
+            and extermination camp?
+          </p>
+          <div class="answer1">
+            <input type="radio" name="q3" id="q3-a1" value="A" checked />
+            <label for="q3-a1">Chelmno</label>
+          </div>
+          <div class="answer2">
+            <input type="radio" name="q3" id="q3-a2" value="B" />
+            <label for="q3-a2">Auschwitz</label>
+          </div>
+        </div>
+        <div class="question-wrapper">
+          <p>
+            <span>4.</span> The German attack on which country caused Britain to
+            enter the Second World War?
+          </p>
+          <div class="answer1">
+            <input type="radio" name="q4" id="q4-a1" value="A" checked />
+            <label for="q4-a1">USSR</label>
+          </div>
+          <div class="answer2">
+            <input type="radio" name="q4" id="q4-a2" value="B" />
+            <label for="q4-a2">Poland</label>
+          </div>
+        </div>
+        <div class="question-wrapper">
+          <p>
+            <span>5.</span> According to Churchill, he had nothing to offer in
+            1940 but what?
+          </p>
+          <div class="answer1">
+            <input type="radio" name="q5" id="q5-a1" value="A" checked />
+            <label for="q5-a1">"Blood, toil, tears and sweat"</label>
+          </div>
+          <div class="answer2">
+            <input type="radio" name="q5" id="q5-a2" value="B" />
+            <label for="q5-a2">"Just peace for nations"</label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
