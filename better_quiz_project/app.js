@@ -27,12 +27,12 @@ form.addEventListener("submit", (e) => {
 
   let counter = 0;
 
-  setInterval(() => {
+  const interval = setInterval(() => {
     if (counter !== score) {
       counter++;
       scoreCounter.textContent = `${counter}`;
     } else {
-      clearInterval();
+      clearInterval(interval);
     }
   }, 20);
 
