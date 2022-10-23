@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./app.js" defer></script>
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-frame">
+        <div class="search">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search your tasks..."
+          />
+        </div>
+        <div class="todos">
+          <!--The tasks will be added below:-->
+          <ul>
+            <!-- <li>
+              <span>I'll read about Array Methods</span>
+              <i class="fa-solid fa-trash"></i>
+            </li>
+            <li>
+              <span>Buy a new house next year</span>
+              <i class="fa-solid fa-trash"></i>
+            </li>
+            <li>
+              <span>The grass should be mowed</span>
+              <i class="fa-solid fa-trash"></i>
+            </li> -->
+          </ul>
+        </div>
+        <div class="add-todo">
+          <p>You have no task. Click on the icon below to add one!</p>
+          <i
+            class="fa-sharp fa-solid fa-pen-to-square"
+            title="Add another task"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <!-- This window will pop up once .fa-pen-to-square icon is clicked. Otherwise, it will have display: none; -->
+    <div class="addTodoWindow">
+      <form class="todo-form">
+        <div class="close-icon">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="input-container">
+          <div class="input-text-container">
+            <input
+              type="text"
+              name="todoText"
+              id="todoText"
+              placeholder="Add new task..."
+            />
+          </div>
+          <div class="input-submit-container">
+            <input type="submit" value="Add Task" />
+          </div>
+        </div>
+      </form>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/16a52127e2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
