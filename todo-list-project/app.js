@@ -45,17 +45,19 @@ search.addEventListener("keyup", (e) => {
 
 addTodoForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  const textInputValue = document.querySelector("#todoText").value.trim();
+  const textInputValue = addTodoForm.todoText.value.trim();
   const ul = document.querySelector("div.todos > ul");
 
-  let html = `
-  <li>
-  <span>${textInputValue}</span>
-  <i class="fa-solid fa-trash"></i>
-  </li>
-  `;
+  if (textInputValue.length) {
+    let html = `
+      <li>
+        <span>${textInputValue}</span>
+        <i class="fa-solid fa-trash"></i>
+      </li>
+    `;
 
-  addTodoWindow.style.transform = "scale(0)";
-  ul.innerHTML += html;
+    addTodoWindow.style.transform = "scale(0)";
+    ul.innerHTML += html;
+  }
   e.target.reset();
 });
