@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: all 300ms linear;
+}
+.mainContainer {
+  min-height: 100vh;
+  background: #d8dae2;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+.circle {
+  background: #e5e7f0;
+  border-radius: 50%;
+}
+.circle-1 {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  z-index: 1;
+}
+.circle-2 {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  bottom: 200px;
+  left: 15px;
+  z-index: 1;
+}
+.secondContainer {
+  min-height: 85vh;
+  max-width: 80vw;
+  background: #eff0f1;
+  border-radius: 12px;
+  padding: 25px;
+  position: relative;
+  box-shadow: 0px 26px 80px -24px rgba(77, 77, 77, 0.75);
+  z-index: 2;
+}
+.textContainer {
+  padding-bottom: 15px;
+}
+.textContainer h1 {
+  padding-bottom: 20px;
+}
+.textContainer span {
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 25px;
+  transition: all 250ms linear;
+}
+.textContainer span:hover {
+  background: #ffffee;
+}
+.images-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+@media screen and (max-width: 1100px) {
+  .images-container {
+    flex-direction: column;
+  }
+  .secondContainer {
+    margin: 50px 0;
+  }
+}
+.item {
+  flex-basis: 33.33%;
+  border-radius: 20px;
+  padding: 20px;
+  background: #fff;
+  transition: all 300ms linear;
+}
+.main-img {
+  height: 65%;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.three-imgs {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 20px;
+}
+.three-imgs div {
+  flex-basis: 33%;
+  height: 70px;
+}
+.three-imgs img {
+  border-radius: 20px;
+  cursor: pointer;
+}
+.item-text {
+  display: flex;
+  height: 25%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+.item:hover {
+  transform: scale(1.01);
+}
